@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1460570578542140}
+  m_IsPrefabParent: 1
+--- !u!1 &1460570578542140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4053241187025074}
+  - component: {fileID: 114705545699876340}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4053241187025074
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460570578542140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114705545699876340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460570578542140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc1daac38359474782ffa1039906c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientList:
+  - ingredientName: Apple
+    ingredientType: 0
+    quantity: 0
+    image: {fileID: 21300000, guid: 897cdd47635e8274cb677ad7f4a417b5, type: 3}
+  - ingredientName: Banana
+    ingredientType: 0
+    quantity: 0
+    image: {fileID: 21300000, guid: 897cdd47635e8274cb677ad7f4a417b5, type: 3}
+  - ingredientName: Strawberry
+    ingredientType: 0
+    quantity: 0
+    image: {fileID: 21300000, guid: 897cdd47635e8274cb677ad7f4a417b5, type: 3}
+  - ingredientName: Eggs
+    ingredientType: 1
+    quantity: 0
+    image: {fileID: 21300000, guid: 9c47e7fce729bd849a239546d61b0fc6, type: 3}
+  - ingredientName: Bread
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Beef
+    ingredientType: 2
+    quantity: 0
+    image: {fileID: 21300000, guid: 1c10c1e5e28fe8d4b912c47cf5d62cfc, type: 3}
+  - ingredientName: Pork
+    ingredientType: 2
+    quantity: 0
+    image: {fileID: 21300000, guid: 1c10c1e5e28fe8d4b912c47cf5d62cfc, type: 3}
+  - ingredientName: Chili
+    ingredientType: 4
+    quantity: 0
+    image: {fileID: 21300000, guid: ea02c82e22ad4c24388681fda1b228bc, type: 3}
+  - ingredientName: Parsley
+    ingredientType: 4
+    quantity: 0
+    image: {fileID: 21300000, guid: ea02c82e22ad4c24388681fda1b228bc, type: 3}
+  - ingredientName: Pepper
+    ingredientType: 3
+    quantity: 0
+    image: {fileID: 21300000, guid: bb8cde74721d7314381a7d5990bf45e0, type: 3}
+  - ingredientName: Saffron
+    ingredientType: 3
+    quantity: 0
+    image: {fileID: 21300000, guid: bb8cde74721d7314381a7d5990bf45e0, type: 3}
+  - ingredientName: Cabbage
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Celery
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Garlic
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Lettuce
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Onions
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  - ingredientName: Radish
+    ingredientType: 5
+    quantity: 0
+    image: {fileID: 21300000, guid: e35e023fd54e124469192379015c857f, type: 3}
+  recipeList:
+  - recipeName: Fried Apple
+    recipeType: 0
+    recipeIngredient:
+    - Apple
+    - Eggs
+    ingredientQuantity: 0300000001000000
+    dishDescription: Regain 20HP instantly
+  - recipeName: Strawberry Tart
+    recipeType: 1
+    recipeIngredient:
+    - Banana
+    - Strawberry
+    - Eggs
+    ingredientQuantity: 020000000300000001000000
+    dishDescription: Damage dealt doubles for 10s
+  - recipeName: Sketchy Meat
+    recipeType: 2
+    recipeIngredient:
+    - Pepper
+    - Garlic
+    - Beef
+    ingredientQuantity: 030000000200000002000000
+    dishDescription: Attack speed reduces for 10s
+  - recipeName: Rotten Apple Tart
+    recipeType: 3
+    recipeIngredient:
+    - Apple
+    - Eggs
+    - Bread
+    ingredientQuantity: 030000000100000002000000
+    dishDescription: Enemies are prone to attack recipient
+  - recipeName: Apple Omelette
+    recipeType: 0
+    recipeIngredient:
+    - Apple
+    - Eggs
+    - Saffron
+    ingredientQuantity: 030000000200000003000000
+    dishDescription: Regain 50HP instantly
+  - recipeName: Roman Meatloaf
+    recipeType: 0
+    recipeIngredient:
+    - Eggs
+    - Saffron
+    - Beef
+    - Parsley
+    ingredientQuantity: 03000000050000000300000004000000
+    dishDescription: Regenerate 25HP every 1s for 10s
+  - recipeName: Rissoles
+    recipeType: 1
+    recipeIngredient:
+    - Eggs
+    - Bread
+    - Beef
+    ingredientQuantity: 020000000300000002000000
+    dishDescription: Attack speed doubles for 10s
+  - recipeName: Good Roast
+    recipeType: 1
+    recipeIngredient:
+    - Pepper
+    - Garlic
+    - Radish
+    - Chili
+    - Pork
+    ingredientQuantity: 0300000004000000030000000200000004000000
+    dishDescription: Attack speed and damage doubles
+  - recipeName: Chopped Liver
+    recipeType: 2
+    recipeIngredient:
+    - Cabbage
+    - Lettuce
+    - Beef
+    - Pork
+    ingredientQuantity: 03000000020000000300000003000000
+    dishDescription: Damage dealt is reduced by half for 10s
+  - recipeName: Devils Pie
+    recipeType: 2
+    recipeIngredient:
+    - Celery
+    - Onions
+    - Radish
+    - Chili
+    - Beef
+    ingredientQuantity: 0300000005000000030000000400000003000000
+    dishDescription: Reduces attack damage and attack speed
